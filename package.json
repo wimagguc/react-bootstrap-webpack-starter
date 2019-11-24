@@ -1,0 +1,44 @@
+{
+  "scripts": {
+    "start": "http-server ./",
+    "build": "webpack --config ./config/webpack.config.production.js",
+    "dev": "webpack-dev-server --open --config ./config/webpack.config.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "demo_api": "file:lib/api",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.5",
+    "datatables.net": "^1.10.19",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.1",
+    "http-server": "^0.11.1",
+    "imports-loader": "^0.8.0",
+    "jquery": "^3.4.1",
+    "prettier": "^1.18.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  }
+}
