@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Navbar, Nav } from 'react-bootstrap';
 import {
   Route,
   NavLink,
@@ -11,18 +12,19 @@ import Notfound from './notfound';
 
 const routing = (
   <Router>
-    <ul className="nav nav-tabs justify-content-end">
-      <li className="nav-item">
-        <NavLink exact className="nav-link" activeClassName="active" to="/">
-          Menu
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink className="nav-link" activeClassName="active" to="/login">
-          Login
-        </NavLink>
-      </li>
-    </ul>
+    <Navbar bg="primary" variant="dark" expand="lg" sticky="top">
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <NavLink exact className="nav-link" activeClassName="active" to="/">
+            Menu
+          </NavLink>
+          <NavLink className="nav-link" activeClassName="active" to="/login">
+            Login
+          </NavLink>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
     <Switch>
       <Route exact path="/" component={Login} />
       <Route path="/login" component={Login} />
