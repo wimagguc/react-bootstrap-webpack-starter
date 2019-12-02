@@ -30,6 +30,14 @@ module.exports = {
         use: 'imports-loader?define=>false',
         include: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        loader: 'url-loader?limit=100000',
+      },
     ],
   },
   devServer: {
