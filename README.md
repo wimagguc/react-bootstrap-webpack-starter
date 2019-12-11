@@ -1,6 +1,21 @@
 # React, Bootstrap & SwaggerAPI Starter
 
-Starter project for React, Bootstrap and Swagger-generated API, built with Webpack
+Starter project for React, Bootstrap and Swagger-generated API, built with Webpack.
+
+## Motivation
+
+There are many tutorials for simple React scaffolds. But, in real life and in a real project you need a few extra bits and bogs. Building those bits and bogs for the browser is a lot of pain that the simple tutorials don’t prepare people for.
+
+Presenting here a strong React starter project that’s used in our latest real life frontend projects. It adds pretty Bootstrap templates and modals, works with the backend API, and is deployed to Netlify with zero effort.
+
+In the box:
+
+* React and Webpack
+* A Swagger-generated API library, to consume backend services. You can of course generate your own API’s frontend library on [editor.swagger.io](https://editor.swagger.io) (or using [swagger-codegen](https://github.com/swagger-api/swagger-codegen)).
+* Bootstrap including jQuery and support for custom templates
+* Build command that can be used to deploy the project on Netlify (or Amazon S3), for simple CI/CD
+* Development server with hot reload
+* ESLint with ES6 settings and built-in support for VSCode
 
 ## Getting started
 
@@ -44,7 +59,7 @@ The current dummy backend is localted under `lib/api`. Replace this with other A
 
 ### 3. CI/CD
 
-If you set up a CI/CD (for example using S3 or Netlify, then simply copy all files from `dist/` to the service after the build step.)
+If you set up a CI/CD (for example using S3 or Netlify: simply build with `yarn build` and then copy all static files from `dist/` to the bucket or service.)
 
 ## License
 
