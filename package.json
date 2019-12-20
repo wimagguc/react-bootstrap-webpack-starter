@@ -37,7 +37,7 @@
     "imports-loader": "^0.8.0",
     "jquery": "^3.4.1",
     "prettier": "^1.18.2",
-    "webpack": "^4.41.3",
+    "webpack": "^4.41.4",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.10.0",
     "webpack-merge": "^4.2.1"
