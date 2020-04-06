@@ -10,7 +10,7 @@
     "demo_api": "file:lib/api",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0-beta.17",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^5.0.1"
   },
   "devDependencies": {
