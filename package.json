@@ -21,7 +21,7 @@
     "@react-native-community/eslint-config": "^1.1.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^25.1.0",
+    "babel-jest": "^26.0.0",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.1.1",
     "datatables.net": "^1.10.19",
